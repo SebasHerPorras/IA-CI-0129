@@ -1,5 +1,8 @@
 from puzzle import generarMatriz
 from AnchoPrimero import anchoPrimero
+#from Greedy import greedy
+#from IDS import ids
+from IDSModificado import ids_modificado
 import time
 
 # -----------------------------
@@ -61,8 +64,7 @@ def menu():
             print("⚠️ Opción aún no implementada.")
             # ejecutar_algoritmo(ids, "IDS")
         elif opcion == "4":
-            print("⚠️ Opción aún no implementada.")
-            # ejecutar_algoritmo(ids_modificado, "IDS Modificado")
+            ejecutar_algoritmo(ids_modificado, "IDS Modificado")
         elif opcion == "5":
             print("Saliendo del programa...")
             break
