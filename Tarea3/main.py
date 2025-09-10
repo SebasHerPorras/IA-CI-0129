@@ -1,7 +1,9 @@
 from puzzle import generarMatriz
-from Anchoprimero import anchoPrimero
+from AnchoPrimero import anchoPrimero
 from AnchoPrimeroGreedy import anchoPrimeroGreedy
 from IDS import IDS
+from IDSModificado import ids_modificado
+
 import time
 
 # -----------------------------
@@ -58,12 +60,10 @@ def menu():
             ejecutar_algoritmo(anchoPrimero, "Ancho Primero (BFS)")
         elif opcion == "2":
             ejecutar_algoritmo(anchoPrimeroGreedy, "Ancho Primero Greedy (GBFS)")
-            # Aquí luego llamarías: ejecutar_algoritmo(greedy, "Ancho Primero Greedy")
         elif opcion == "3":
             ejecutar_algoritmo(IDS, "IDS Tradicional (Memoria Limitada)")
         elif opcion == "4":
-            print("⚠️ Opción aún no implementada.")
-            # ejecutar_algoritmo(ids_modificado, "IDS Modificado")
+            ejecutar_algoritmo(ids_modificado, "IDS Modificado")
         elif opcion == "5":
             print("Saliendo del programa...")
             break
